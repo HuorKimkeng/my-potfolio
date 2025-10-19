@@ -13,11 +13,11 @@ const skills = [
   { name: "C#", percent: 85 },
   { name: "Java", percent: 80 },
   { name: "ReactJS", percent: 90 },
-  { name: "NodeJS", percent: 70 },
+  { name: "NodeJS", percent: 85 },
   { name: "NextJS", percent: 85 },
-  { name: "VueJS", percent: 60 },
-  { name: "Dart", percent: 70 },
-  { name: "Flutter", percent: 75 },
+  { name: "VueJS", percent: 80 },
+  { name: "Dart", percent: 80 },
+  { name: "Flutter", percent: 80 },
   { name: "Laravel", percent: 75 },
 ];
 
