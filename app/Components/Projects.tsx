@@ -63,7 +63,7 @@ export default function Projects() {
                         <div className="ui-card-one">
                            <a href="https://www.figma.com/design/VafISqRDP2VFkOfcSwopi0/Tea-Shop?node-id=1-2&t=GNftmvXCyleecW0R-0" target="_blank" rel="noopener noreferrer">
                               <div className="project-images">
-                                 <img src="/images/ux-ui-coffee-shop.png" alt="" />
+                                 <img src="/src/ux-ui-coffee-shop.png" alt="" />
                               </div>
                            </a>
                            {/* <div className="project-images">
@@ -81,7 +81,7 @@ export default function Projects() {
                         <div className="ui-card-one">
                            <a href="">
                               <div className="project-images">
-                                 <img src="/images/portfolio-web.png" alt="" />
+                                 <img src="/src/portfolio-web.png" alt="" />
                               </div>
                            </a>
 
@@ -100,7 +100,7 @@ export default function Projects() {
                      <div className="ui-card">
                         <div className="app-card-one">
                            <div className="app-card-images">
-                              <img src="/images/color-sort.jpg" alt="" />
+                              <img src="/src/color-sort.jpg" alt="" />
                            </div>
                            <div className="app-card-text">
                               <h2>App</h2>
@@ -110,7 +110,7 @@ export default function Projects() {
 
                         <div className="app-card-one">
                            <div className="app-card-images">
-                              <img src="/images/flappy-bird.jpg" alt="" />
+                              <img src="/src/flappy-bird.jpg" alt="" />
                            </div>
                            <div className="app-card-text">
                               <h2>App</h2>
@@ -120,7 +120,7 @@ export default function Projects() {
 
                         <div className="app-card-one">
                            <div className="app-card-images">
-                              <img src="/images/image-wprd-puzzle.jpg" alt="" />
+                              <img src="/src/image-wprd-puzzle.jpg" alt="" />
                            </div>
                            <div className="app-card-text">
                               <h2>App</h2>
@@ -130,7 +130,7 @@ export default function Projects() {
 
                         <div className="app-card-one">
                            <div className="app-card-images">
-                              <img src="/images/snake.jpg" alt="" />
+                              <img src="/src/snake.jpg" alt="" />
                            </div>
                            <div className="app-card-text">
                               <h2>App</h2>
@@ -140,7 +140,7 @@ export default function Projects() {
 
                         <div className="app-card-one">
                            <div className="app-card-images">
-                              <img src="/images/brick-breaker.jpg" alt="" />
+                              <img src="/src/brick-breaker.jpg" alt="" />
                            </div>
                            <div className="app-card-text">
                               <h2>App</h2>

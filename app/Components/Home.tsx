@@ -59,7 +59,7 @@ export default function Home() {
             </div>
             <div className="home-right">
                <div className="my-photo">
-                  <img src="/images/my-photo.jpg" alt="" />
+                  <img src="/src/my-photo.jpg" alt="" />
                </div>
             </div>
          </div>

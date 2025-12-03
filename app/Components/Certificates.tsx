@@ -9,10 +9,10 @@ function Certificates () {
    const [imageSrc, setImageSrc] = useState("");
 
    // Open modal
-   const handleView = (src) => {
-      setImageSrc(src);
-      setShowImage(true);
-   };
+      const handleView = (src: string) => {
+         setImageSrc(src);
+         setShowImage(true);
+      };
 
    // Close modal
    const closeModal = () => {
@@ -41,7 +41,7 @@ function Certificates () {
                   </div>
 
                   <div className="button-of-certi">
-                     <button onClick={() => handleView("/images/pop-up/Bachelor-Degree-Certificate.jpg")}>
+                     <button onClick={() => handleView("/src/pop-up/Bachelor-Degree-Certificate.jpg")}>
                         View
                      </button>
                   </div>
@@ -53,7 +53,7 @@ function Certificates () {
                   </div>
 
                   <div className="button-of-certi">
-                     <button onClick={() => handleView("/images/pop-up/Introduction-to-Networks.png")}>
+                     <button onClick={() => handleView("/src/pop-up/Introduction-to-Networks.png")}>
                         View
                      </button>
                   </div>
@@ -67,7 +67,7 @@ function Certificates () {
                   </div>
 
                   <div className="button-of-certi">
-                     <button onClick={() => handleView("/images/pop-up/ENSA.png")}>
+                     <button onClick={() => handleView("/src/pop-up/ENSA.png")}>
                         View
                      </button>
                   </div>
@@ -79,7 +79,7 @@ function Certificates () {
                   </div>
 
                   <div className="button-of-certi">
-                     <button onClick={() => handleView("/images/pop-up/SRWE.png")}>
+                     <button onClick={() => handleView("/src/pop-up/SRWE.png")}>
                         View
                      </button>
                   </div>

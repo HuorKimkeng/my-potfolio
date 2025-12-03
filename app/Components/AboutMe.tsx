@@ -6,7 +6,7 @@ export default function AboutMe() {
     <div className="about-me-cover">
       <div className="about-me-small">
         <div className="about-me-left">
-          <img src="/images/about-me-for-real.JPG" alt="" />
+          <img src="/src/about-me-for-real.JPG" alt="" />
         </div>
         <div className="about-me-right">
           <div className="about-me">
