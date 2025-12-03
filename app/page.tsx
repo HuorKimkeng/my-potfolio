@@ -1,13 +1,14 @@
-import React from 'react';
-import './Components/style.css'; 
+import React from "react";
+import "./Components/style.css";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import AboutMe from "./Components/AboutMe";
 import Skills from "./Components/Skills";
-import Projects from './Components/Projects';
-import ContactMe from './Components/ContactMe';
-import Footer from './Components/Footer';
-import Location from './Components/Location';
+import Projects from "./Components/Projects";
+import ContactMe from "./Components/ContactMe";
+import Footer from "./Components/Footer";
+import Location from "./Components/Location";
+import Certificates from "./Components/Certificates";
 
 export default function MainPage() {
   return (
@@ -18,6 +19,9 @@ export default function MainPage() {
       </section>
       <section id="about" className="section">
         <AboutMe />
+      </section>
+      <section id="certificates" className="certificates">
+        <Certificates />
       </section>
       <section id="skill" className="section">
         <Skills />
