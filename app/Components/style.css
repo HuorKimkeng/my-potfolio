@@ -50,7 +50,7 @@ html {
 }
 
 .logo h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: black;
   font-weight: 600;
   text-transform: uppercase;
@@ -68,7 +68,7 @@ html {
 
 .menu-list {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 0;
   margin: 0;
 }
@@ -82,6 +82,7 @@ html {
   position: relative;
   text-decoration: none;
   padding-bottom: 5px;
+  font-size: 1.2rem;
 }
 
 .menu-list li a::after {
@@ -136,7 +137,6 @@ html {
   justify-content: start;
   align-items: center;
   font-size: 1.2rem;
-  /* color: black; */
   color: darkgrey;
   font-weight: 500;
 }
@@ -289,6 +289,139 @@ html {
   font-size: 2.5rem;
   color: black;
   font-weight: 500;
+}
+
+/* Certificate */
+.certificates-container {
+  width: 100%;
+  height: 600px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.certificate-title {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate-title h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: black;
+}
+
+.certificate-text-desc {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate-text-desc p {
+  font-size: 1.1rem;
+  color: darkgray;
+  font-weight: 500;
+}
+
+.certificate-card {
+  width: 60%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate-card-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.certificate-card-item {
+  width: 90%;
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: whitesmoke;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: black 1px 1px 4px;
+}
+
+.title-of-certi {
+  width: 90%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title-of-certi h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+}
+
+.button-of-certi {
+  width: 90%;
+  height: 35%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Image Popup */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button-of-certi button {
+  padding: 8px 15px;
+  background: #00c4cc;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-of-certi button:hover {
+  background: #009fa3;
 }
 
 /* Skills */
@@ -707,7 +840,6 @@ html {
   width: 100%;
   max-width: 350px;
   background: #00c4cc;
-  /* background: #fff; */
   padding: 24px;
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(46, 3, 3, 0.08);
@@ -808,1136 +940,148 @@ html {
   align-items: center;
 }
 
-/* Certificate */
-.certificates-container {
-  width: 100%;
-  height: 600px;
-  margin-top: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-
-.certificate-title {
-  width: 100%;
-  height: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.certificate-title h2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: black;
-}
-
-.certificate-text-desc {
-  width: 50%;
-  height: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.certificate-text-desc p {
-  font-size: 1.1rem;
-  color: darkgray;
-  font-weight: 500;
-}
-
-.certificate-card {
-  width: 60%;
-  height: 65%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.certificate-card-left {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-}
-
-/* .certificate-card-right {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-} */
-
-.certificate-card-item {
-  width: 90%;
-  height: 150px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: whitesmoke;
-  flex-direction: column;
-  border-radius: 8px;
-  /* border: black 1px solid; */
-  box-shadow: black 1px 1px 4px;
-}
-
-.title-of-certi {
-  width: 90%;
-  height: 40%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.title-of-certi h2 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: black;
-}
-
-.button-of-certi {
-  width: 90%;
-  height: 35%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-/* Image Popup */
-.image-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.modal-image {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 10px;
-}
-
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.button-of-certi button {
-  padding: 8px 15px;
-  background: #00c4cc;
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button-of-certi button:hover {
-  background: #009fa3;
-}
-
 /* Responsive */
 /* Mobile */
-@media (max-width: 600px) {
-  .section {
-    padding-top: 60px;
-    min-height: calc(90vh - 90px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+@media (max-width: 480px) {
+  /* Section */
+  .section{
+    padding-top: 0px;
+    min-height: calc(90vh - 150px);
   }
 
+  /* Header */
   .header {
-    height: 60px;
+    height: 70px;
   }
 
   .mid-header {
-    width: 90%;
+    width: 95%;
   }
 
   .logo {
     width: 100px;
-    height: 50px;
   }
 
   .logo h1 {
-    font-size: 1.2rem;
-  }
-
-  .menu {
-    width: 450px;
+    font-size: 1rem;
   }
 
   .menu-list {
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .menu-list li a {
-    font-size: 0.7rem;
+    font-size: 0.57rem;
   }
 
   /* Home */
   .home-cover {
-    height: 350px;
-    margin-top: 0;
-  }
-
-  .home-small {
-    width: 95%;
+    margin-top: 0px;
+    height: 300px;
   }
 
   .home-left {
-    width: 60%;
+    padding: 20px 20px 20px 0;
+  }
+
+  .home-small {
+    width: 90%;
   }
 
   .hi-text {
-    font-size: 0.7rem;
-    height: 10%;
+    font-size: 1rem;
   }
 
   .name-text {
     font-size: 1.2rem;
-    height: 12%;
   }
 
   .position {
-    font-size: 1.5rem;
-    height: 15%;
+    font-size: 1.4rem;
   }
 
   .describtion p {
-    font-size: 0.7rem;
-  }
-
-  .describtion {
-    height: 73%;
+    font-size: 0.6rem;
   }
 
   .home-right {
-    width: 40%;
+    justify-content: flex-start;
   }
 
   .my-photo {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 55%;
+  }
+
+  .my-photo, .my-photo img {
+    border-radius: 8px;
   }
 
   /* About Me */
   .about-me-cover {
     height: 250px;
+    margin-top: 10px;
   }
 
   .about-me-small {
     width: 95%;
+    height: 250px;
+    gap: 10px;  
+  }
+
+  .about-me-left img {
+    width: 100%;
+    height: 70%;
   }
 
   .about-text {
     height: 50px;
-    font-size: 1.3rem;
   }
 
-  .about-me-left img {
-    width: 90%;
-    height: 80%;
-  }
-
-  .about-me h2 {
-    font-size: 1.3rem;
+  .about-text h2 {
+    font-size: 1.2rem;
   }
 
   .about-me p {
-    font-size: 0.7rem;
-  }
-
-  /* Skills */
-  .skill-small-cover {
-    width: 90%;
-    height: 100%;
-  }
-
-  .skills-title {
-    font-size: 1.3rem;
-  }
-
-  .sub-prog-name, .sub-prog-percentage {
     font-size: 0.6rem;
   }
 
-  .prog-percentage {
-    height: 20%;
-  }
-
-  /* Projects */
-  .projects-container {
-    height: 400px;
-  }
-
-  .project-title {
-    height: 50px;
-    font-size: 1.3rem;
-  }
-
-  .project-describtion-text {
-    width: 100%;
-  }
-
-  .project-describtion-text p {
-    font-size: 0.7rem;
-  }
-
-  .project-card-cover {
-    height: auto;
-  }
-
-  .select-button {
-    height: 80px;
-  }
-
-  .glass-radio-group {
-    height: 40px;
-  }
-
-  .project-card {
-    width: 90%;
-    height: 180px;
-  }
-
-  .project-text {
-    height: 50px;
-  }
-
-  .project-text h2, .project-text p {
-    font-size: 0.7rem;
-  }
-
-  .ui-card {
-    gap: 1rem;
-  }
-
-  .app-card-one {
-    width: 30%;
-  }
-
-  .app-card-text h2, .app-card-text p {
-    font-size: 0.45rem;
-  }
-
-  /* Contact */
-  .contact-me-container {
-    height: 400px;
-  }
-
-  .contact-me-cover {
-    width: 90%;
-    height: 100%;
-  }
-
-  .contact-title h1 {
-    font-size: 1.3rem;
-  }
-
-  .contact-social {
-    height: 30px;
-  }
-
-  .contact-social-box {
-    width: 30px;
-    height: 30px;
-  }
-
-  .contact-social-box svg {
-    width: 20px !important;
-    height: 20px !important;
-  }
-
-  .contact-form {
-    padding: 16px;
-    gap: 16px;
-  }
-
-  .form-group label {
-    font-size: 0.7rem;
-  }
-
-  .submit-btn {
-    height: 40px;
-    padding: 0;
-    font-size: 0.8rem;
-  }
-
-  /* Location */
-  .location-container {
+  /* Certificate */
+  .certificates-container {
     height: 300px;
   }
 
-  .location-cover {
-    width: 95%;
-    height: 95%;
-  }
-
-  /* Footer */
-  .footer {
+  .certificate-title {
     height: 50px;
   }
 
-  /* Scroll to top */
-  .scroll-to-top-btn {
-    width: 30px;
-    height: 30px;
-  }
-
-  .scroll-to-top-btn svg {
-    width: 20px !important;
-    height: 20px !important;
-  } 
-}
-
-
-/* @media (min-width: 601px) and (max-width: 900px) {
-}
-
-@media (min-width: 901px) and (max-width: 1200px) {
-
-}
-
-@media (min-width: 1201px) {
-} */
-
-/* Tablet */
-@media (min-width: 601px) and (max-width: 900px) {
-  .section {
-    padding-top: 70px;
-    min-height: calc(90vh - 70px);
-  }
-
-  .header {
-    height: 70px;
-  }
-
-  .mid-header {
-    width: 95%;
-  }
-
-  .logo {
-    width: 120px;
-    height: 60px;
-  }
-
-  .logo h1 {
-    font-size: 1.4rem;
-  }
-
-  .menu {
-    width: 600px;
-  }
-
-  .menu-list {
-    gap: 1.5rem;
-  }
-
-  .menu-list li a {
-    font-size: 0.9rem;
-  }
-
-  /* Home */
-  .home-cover {
-    height: 300px;
-  }
-
-  .home-small {
-    width: 90%;
-  }
-
-  .home-left {
-    width: 65%;
-  }
-
-  .hi-text {
-    font-size: 1rem;
-  }
-
-  .name-text {
-    font-size: 1.5rem;
-  }
-
-  .position {
-    font-size: 2rem;
-  }
-
-  .describtion p {
-    font-size: 0.9rem;
-  }
-
-  .home-right {
-    width: 35%;
-  }
-
-  .my-photo {
-    width: 160px;
-    height: 160px;
-  }
-
-  /* About Me */
-  .about-me-cover {
-    height: 200px;
-  }
-
-  .about-me-small {
-    width: 90%;
-  }
-
-  .about-text {
-    height: 40px;
-    font-size: 1.5rem;
-  }
-
-  .about-me-left img {
-    width: 80%;
-    height: 70%;
-  }
-
-  .about-me h2 {
-    font-size: 1.1rem;
-  }
-
-  .about-me p {
-    font-size: 0.9rem;
-  }
-
-  /* Skills */
-  .skill-small-cover {
-    width: 80%;
-  }
-
-  .skills-title {
-    font-size: 1.7rem;
-  }
-
-  .sub-prog-name, .sub-prog-percentage {
-    font-size: 0.8rem;
-  }
-
-  .prog-percentage {
-    height: 18%;
-  }
-
-  /* Projects */
-  .projects-container {
-    height: 350px;
-  }
-
-  .project-title {
-    height: 40px;
-    font-size: 1.7rem;
-  }
-
-  .project-describtion-text {
-    width: 95%;
-  }
-
-  .project-describtion-text p {
-    font-size: 0.9rem;
-  }
-
-  .project-card-cover {
-    height: auto;
-  }
-
-  .select-button {
-    height: 60px;
-  }
-
-  .glass-radio-group {
-    height: 36px;
-  }
-
-  .project-card {
-    width: 95%;
-    height: 140px;
-  }
-
-  .project-text {
-    height: 40px;
-  }
-
-  .project-text h2, .project-text p {
-    font-size: 0.9rem;
-  }
-
-  .ui-card {
-    gap: 2rem;
-  }
-
-  .app-card-one {
-    width: 25%;
-  }
-
-  .app-card-text h2, .app-card-text p {
-    font-size: 0.7rem;
-  }
-
-  /* Contact */
-  .contact-me-container {
-    height: 350px;
-  }
-
-  .contact-me-cover {
-    width: 85%;
-  }
-
-  .contact-title h1 {
-    font-size: 1.7rem;
-  }
-
-  .contact-social {
-    height: 40px;
-  }
-
-  .contact-social-box {
-    width: 40px;
-    height: 40px;
-  }
-
-  .contact-social-box svg {
-    width: 28px;
-    height: 28px;
-  }
-
-  .contact-form {
-    padding: 18px;
-    gap: 14px;
-  }
-
-  .form-group label {
-    font-size: 0.9rem;
-  }
-
-  .submit-btn {
-    height: 36px;
-    font-size: 1rem;
-  }
-
-  /* Location */
-  .location-container {
-    height: 220px;
-  }
-
-  .location-cover {
-    width: 90%;
-    height: 90%;
-  }
-
-  /* Footer */
-  .footer {
-    height: 60px;
-  }
-
-  /* Scroll to top */
-  .scroll-to-top-btn {
-    width: 40px;
-    height: 40px;
-  }
-
-  .scroll-to-top-btn svg {
-    width: 28px;
-    height: 28px;
-  }
-}
-
-/* Small Desktop */
-@media (min-width: 901px) and (max-width: 1200px) {
-  .section {
-    padding-top: 80px;
-    min-height: calc(90vh - 80px);
-  }
-
-  .header {
-    height: 80px;
-  }
-
-  .mid-header {
-    width: 98%;
-  }
-
-  .logo {
-    width: 140px;
-    height: 65px;
-  }
-
-  .logo h1 {
-    font-size: 1.6rem;
-  }
-
-  .menu {
-    width: 700px;
-  }
-
-  .menu-list {
-    gap: 2rem;
-  }
-
-  .menu-list li a {
-    font-size: 1rem;
-  }
-
-  /* Home */
-  .home-cover {
-    height: 380px;
-  }
-
-  .home-small {
-    width: 95%;
-  }
-
-  .home-left {
-    width: 68%;
-  }
-
-  .hi-text {
-    font-size: 1.1rem;
-  }
-
-  .name-text {
-    font-size: 1.7rem;
-  }
-
-  .position {
-    font-size: 2.3rem;
-  }
-
-  .describtion p {
-    font-size: 1rem;
-  }
-
-  .home-right {
-    width: 32%;
-  }
-
-  .my-photo {
-    width: 180px;
-    height: 180px;
-  }
-
-  /* About Me */
-  .about-me-cover {
-    height: 300px;
-  }
-
-  .about-me-small {
-    width: 95%;
-  }
-
-  .about-text {
-    height: 60px;
-    font-size: 1.8rem;
-  }
-
-  .about-me-left img {
-    width: 85%;
-    height: 80%;
-  }
-
-  .about-me h2 {
-    font-size: 1.5rem;
-  }
-
-  .about-me p {
-    font-size: 1rem;
-  }
-
-  /* Skills */
-  .skill-small-cover {
-    width: 85%;
-  }
-
-  .skills-title {
-    font-size: 2rem;
-  }
-
-  .sub-prog-name, .sub-prog-percentage {
-    font-size: 1rem;
-  }
-
-  .prog-percentage {
-    height: 22%;
-  }
-
-  /* Projects */
-  .projects-container {
-    height: 600px;
-  }
-
-  .project-title {
-    height: 60px;
-    font-size: 2rem;
-  }
-
-  .project-describtion-text {
-    width: 95%;
-  }
-
-  .project-describtion-text p {
-    font-size: 1rem;
-  }
-
-  .project-card-cover {
-    height: auto;
-  }
-
-  .select-button {
-    height: 90px;
-  }
-
-  .glass-radio-group {
-    height: 48px;
-  }
-
-  .project-card {
-    width: 95%;
-    height: 300px;
-  }
-
-  .project-text {
-    height: 70px;
-  }
-
-  .project-text h2, .project-text p {
-    font-size: 1.1rem;
-  }
-
-  .ui-card {
-    gap: 2.5rem;
-  }
-
-  .app-card-one {
-    width: 20%;
-  }
-
-  .app-card-text h2, .app-card-text p {
-    font-size: 0.9rem;
-  }
-
-  /* Contact */
-  .contact-me-container {
-    height: 350px;
-  }
-
-  .contact-me-cover {
-    width: 80%;
-  }
-
-  .contact-title h1 {
-    font-size: 2rem;
-  }
-
-  .contact-social {
-    height: 50px;
-  }
-
-  .contact-social-box {
-    width: 50px;
-    height: 50px;
-  }
-
-  .contact-social-box svg {
-    width: 32px;
-    height: 32px;
-  }
-
-  .contact-form {
-    padding: 20px;
-    gap: 18px;
-  }
-
-  .form-group label {
-    font-size: 1rem;
-  }
-
-  .submit-btn {
-    height: 48px;
-    font-size: 1.1rem;
-  }
-
-  /* Location */
-  .location-container {
-    height: 350px;
-  }
-
-  .location-cover {
-    width: 80%;
-    height: 90%;
-  }
-
-  /* Footer */
-  .footer {
-    height: 70px;
-  }
-
-  /* Scroll to top */
-  .scroll-to-top-btn {
-    width: 50px;
-    height: 50px;
-  }
-
-  .scroll-to-top-btn svg {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-/* Large Desktop */
-@media (min-width: 1201px) {
-  .section {
-    padding-top: 90px;
-    min-height: calc(90vh - 90px);
-  }
-
-  .header {
-    height: 90px;
-  }
-
-  .mid-header {
-    width: 90%;
-  }
-
-  .logo {
-    width: 150px;
-    height: 70px;
-  }
-
-  .logo h1 {
-    font-size: 2rem;
-  }
-
-  .menu {
-    width: 900px;
-  }
-
-  .menu-list {
-    gap: 2.5rem;
-  }
-
-  .menu-list li a {
+  .certificate-title h2 {
     font-size: 1.2rem;
   }
 
-  /* Home */
-  .home-cover {
-    height: 400px;
-  }
-
-  .home-small {
-    width: 80%;
-  }
-
-  .home-left {
-    width: 60%;
-  }
-
-  .hi-text {
-    font-size: 1.2rem;
-  }
-
-  .name-text {
-    font-size: 2rem;
-  }
-
-  .position {
-    font-size: 3rem;
-  }
-
-  .describtion p {
-    font-size: 1.1rem;
-  }
-
-  .home-right {
-    width: 40%;
-  }
-
-  .my-photo {
-    width: 400px;
-    height: 400px;
-  }
-
-  /* About Me */
-  .about-me-cover {
-    height: 400px;
-  }
-
-  .about-me-small {
-    width: 80%;
-  }
-
-  .about-text {
-    height: 80px;
-    font-size: 2.5rem;
-  }
-
-  .about-me-left img {
-    width: 90%;
-    height: 90%;
-  }
-
-  .about-me h2 {
-    font-size: 2rem;
-  }
-
-  .about-me p {
-    font-size: 1.1rem;
-  }
-
-  /* Skills */
-  .skill-small-cover {
-    width: 50%;
-  }
-
-  .skills-title {
-    font-size: 2.5rem;
-  }
-
-  .sub-prog-name, .sub-prog-percentage {
-    font-size: 1.2rem;
-  }
-
-  .prog-percentage {
-    height: 30%;
-  }
-
-  /* Projects */
-  .projects-container {
-    height: 700px;
-  }
-
-  .project-title {
-    height: 80px;
-    font-size: 2.5rem;
-  }
-
-  .project-describtion-text {
-    width: 80%;
-  }
-
-  .project-describtion-text p {
-    font-size: 1.1rem;
-  }
-
-  .project-card-cover {
-    height: 70%;
-  }
-
-  .select-button {
-    height: 100px;
-  }
-
-  .glass-radio-group {
-    height: 56px;
-  }
-
-  .project-card {
-    width: 90%;
-    height: 85%;
-  }
-
-  .project-text {
-    height: 80px;
-  }
-
-  .project-text h2, .project-text p {
-    font-size: 1.2rem;
-  }
-
-  .ui-card {
-    gap: 3.5rem;
-  }
-
-  .app-card-one {
-    width: 16%;
-  }
-
-  .app-card-text h2, .app-card-text p {
-    font-size: 1rem;
-  }
-
-  /* Contact */
-  .contact-me-container {
-    height: 500px;
-  }
-
-  .contact-me-cover {
-    width: 60%;
-  }
-
-  .contact-title h1 {
-    font-size: 2.5rem;
-  }
-
-  .contact-social {
+  .certificate-text-desc {
+    width: 95%;
     height: 60px;
   }
 
-  .contact-social-box {
-    width: 60px;
+  .certificate-text-desc p {
+    font-size: 0.6rem;
+  }
+
+  .certificate-card {
+    width: 95%;
+  }
+
+  .certificate-card-item {
     height: 60px;
   }
 
-  .contact-social-box svg {
-    width: 40px;
-    height: 40px;
+  .title-of-certi h2 {
+    font-size: 0.6rem;
   }
 
-  .contact-form {
-    padding: 24px;
-    gap: 20px;
-  }
-
-  .form-group label {
-    font-size: 1.2rem;
-  }
-
-  .submit-btn {
-    height: 56px;
-    font-size: 1.2rem;
-  }
-
-  /* Location */
-  .location-container {
-    height: 500px;
-  }
-
-  .location-cover {
-    width: 50%;
-    height: 95%;
-  }
-
-  /* Footer */
-  .footer {
-    height: 80px;
-  }
-
-  /* Scroll to top */
-  .scroll-to-top-btn {
-    width: 60px;
-    height: 60px;
-  }
-
-  .scroll-to-top-btn svg {
-    width: 40px;
-    height: 40px;
+  .button-of-certi button {
+    padding: 2px 4px;
+    font-size: 0.6rem;
   }
 }
