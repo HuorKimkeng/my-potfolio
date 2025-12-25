@@ -942,7 +942,7 @@ html {
 
 /* Responsive */
 /* Mobile */
-@media (max-width: 480px) {
+@media (min-width: 430px) {
   /* Section */
   .section{
     padding-top: 0px;
