@@ -23,7 +23,7 @@ function Certificates () {
    return (
       <div className="certificates-container">
          <div className="certificate-title">
-            <h2>Certificates</h2>
+            <u>Certificates</u>
          </div>
 
          <div className="certificate-text-desc">

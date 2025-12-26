@@ -63,7 +63,9 @@ export default function Skills() {
    return (
       <div className="skills-container">
          <div className="skill-small-cover">
-            <div className="skills-title">Skills</div>
+            <div className="skills-title">
+               <u>Skills</u>
+            </div>
             <div className="skills-describtions">
                {skills.map((skill) => (
                   <div className="prog-skill" key={skill.name}>

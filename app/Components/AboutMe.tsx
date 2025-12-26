@@ -11,7 +11,7 @@ export default function AboutMe() {
         <div className="about-me-right">
           <div className="about-me">
             <div className="about-text">
-              <h2>About Me</h2>
+              <u>About Me</u>
             </div>
             <p>
               Computer Science graduate (2024) from the Royal University of

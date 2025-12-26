@@ -8,21 +8,21 @@ export default function Projects() {
    return (
       <div className="projects-container">
          <div className="project-small">
-         <div className="project-title">
-            <h1>Projects</h1>
-         </div>
+            <div className="project-title">
+               <u>Projects</u>
+            </div>
 
-         <div className="project-describtion-text">
-            <p>
-               I specialize in crafting <b>UX/UI designs</b>, <b>websites</b>, and{" "}
-               <b>mobile applications </b>
-               that combine visual appeal with functionality. My projects range
-               from building responsive, high-performance websites to designing
-               intuitive user interfaces and developing mobile apps for Android and
-               iOS. I focus on delivering solutions that are not only aesthetically
-               pleasing but also optimized for user experience and business goals.
-            </p>
-         </div>
+            <div className="project-describtion-text">
+               <p>
+                  I specialize in crafting <b>UX/UI designs</b>, <b>websites</b>, and{" "}
+                  <b>mobile applications </b>
+                  that combine visual appeal with functionality. My projects range
+                  from building responsive, high-performance websites to designing
+                  intuitive user interfaces and developing mobile apps for Android and
+                  iOS. I focus on delivering solutions that are not only aesthetically
+                  pleasing but also optimized for user experience and business goals.
+               </p>
+            </div>
 
             <div className="project-card-cover">
                <div className="select-button">
@@ -97,7 +97,7 @@ export default function Projects() {
                      </div>
                   )}
                   {selected === "app" && (
-                     <div className="ui-card">
+                     <div className="app-ui-card">
                         <div className="app-card-one">
                            <div className="app-card-images">
                               <img src="/src/color-sort.jpg" alt="" />

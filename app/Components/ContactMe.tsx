@@ -19,7 +19,8 @@ export default function ContactMe() {
                      <a href="https://www.linkedin.com/in/huor-kimkeng-b25b21279/" target="_blank" rel="noopener noreferrer" >
                         <FontAwesomeIcon 
                            icon={faLinkedinIn}
-                           style={{ width: "32px", height: "32px", color: "#fff" }} 
+                           // style={{ width: "32px", height: "32px", color: "#fff" }} 
+                           className="social-icon"
                         />
                      </a>
                   </div>
@@ -28,7 +29,8 @@ export default function ContactMe() {
                      <a href="https://github.com/HuorKimkeng" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon 
                            icon={faGithub}
-                           style={{width: "32px", height: "32px", color: "#fff"}}
+                           className="social-icon"
+                           // style={{width: "32px", height: "32px", color: "#fff"}}
                         />
                      </a>
                   </div>
@@ -36,8 +38,9 @@ export default function ContactMe() {
                   <div className="contact-social-box">
                      <a href="https://t.me/kimkenghuor" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon 
-                           icon={faTelegram}  
-                           style={{width: "32px", height: "32px", color: "#fff"}}
+                           icon={faTelegram}
+                           className="social-icon"
+                           // style={{width: "32px", height: "32px", color: "#fff"}}
                         />
                      </a>
                   </div>
@@ -45,8 +48,9 @@ export default function ContactMe() {
                   <div className="contact-social-box">
                      <a href="https://web.facebook.com/keng.jubpiter/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon 
-                           icon={faFacebook} 
-                           style={{width: "32px", height: "32px", color: "#fff"}}
+                           icon={faFacebook}
+                           className="social-icon"
+                           // style={{width: "32px", height: "32px", color: "#fff"}}
                         />
                      </a>
                   </div>
